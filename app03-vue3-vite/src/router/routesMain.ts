@@ -1,6 +1,7 @@
+import { RouteRecordRaw } from 'vue-router'
 import ContainerLayout from '../pages/_container.vue'
 
-const children = [
+const children: Array<RouteRecordRaw> = [  
   {
     path: '/',
     name: 'home',
@@ -10,8 +11,7 @@ const children = [
     path: '/chat',
     name: 'chat',
     component: () => import('../pages/chat.vue')
-  },
-
+  }
 ]
 
 export default {
